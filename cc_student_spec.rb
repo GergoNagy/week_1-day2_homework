@@ -74,4 +74,10 @@ require_relative('./cc_student.rb')
 			includes = team.players.include?("Person3")
 			assert_equal(true, includes)
 		end
+
+		def test_points
+			team = SportsTeam.new("Lions", ["Person1", "Person2", "Person3"],"Stephen")		
+			points = team.add_points(2)
+			assert_equal(2, points)
+		end
 	end

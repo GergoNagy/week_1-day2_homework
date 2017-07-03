@@ -37,12 +37,13 @@
 class SportsTeam
 
 	attr_reader :name
-	attr_accessor :coach, :players
+	attr_accessor :coach, :players, :points
 
 	def initialize(name, players, coach)
 		@name = name
 		@players = players
 		@coach = coach
+		@points = 0
 	end
 
 	# def get_name
@@ -61,7 +62,9 @@ class SportsTeam
 	# 	@coach = new_coach
 	# end
 
-
-
+	def add_points(num)
+		@points += num
+	end
 
 end
+
