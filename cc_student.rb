@@ -6,4 +6,9 @@ class CodeclanStudent
 		@cohort = cohort.to_i
 	end
 
+	def get_name
+		return @name
+	end
+
+	
 end
