@@ -61,4 +61,11 @@ require_relative('./cc_student.rb')
 			team.coach ="Rick"
 			assert_equal("Rick", team.coach)
 		end
+
+		def test_new_player
+			team = SportsTeam.new("Lions", ["Person1", "Person2", "Person3"],"Stephen")		
+			team.players.push("Person4")
+			assert_equal("Person4", team.players.last)
+			p team.players
+		end	
 	end

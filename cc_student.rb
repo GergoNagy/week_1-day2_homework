@@ -36,8 +36,8 @@
 
 class SportsTeam
 
-	attr_reader :name, :players
-	attr_accessor :coach
+	attr_reader :name
+	attr_accessor :coach, :players
 
 	def initialize(name, players, coach)
 		@name = name
