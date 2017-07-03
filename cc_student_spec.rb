@@ -68,4 +68,10 @@ require_relative('./cc_student.rb')
 			assert_equal("Person4", team.players.last)
 			p team.players
 		end	
+
+		def test_player_in_arr?
+			team = SportsTeam.new("Lions", ["Person1", "Person2", "Person3"],"Stephen")		
+			includes = team.players.include?("Person3")
+			assert_equal(true, includes)
+		end
 	end
