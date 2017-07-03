@@ -53,5 +53,10 @@ class SportsTeam
 		return @coach
 	end
 
+	def update_coach(new_coach)
+		@coach = new_coach
+		get_coach
+	end
+
 
 end
