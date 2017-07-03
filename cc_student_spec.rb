@@ -43,22 +43,22 @@ require_relative('./cc_student.rb')
 
 		def test_get_name
 			team = SportsTeam.new("Lions", ["Person1", "Person2", "Person3"],"Stephen")
-			assert_equal("Lions",team.get_name)
+			assert_equal("Lions",team.name)
 		end
 			
 		def test_get_players
 			team = SportsTeam.new("Lions", ["Person1", "Person2", "Person3"],"Stephen")
-			assert_equal(["Person1", "Person2", "Person3"],team.get_players)
+			assert_equal(["Person1", "Person2", "Person3"],team.players)
 		end
 			
 		def test_get_coach
 			team = SportsTeam.new("Lions", ["Person1", "Person2", "Person3"],"Stephen")
-			assert_equal("Stephen",team.get_coach)
+			assert_equal("Stephen",team.coach)
 		end
 
 		def test_update
 			team = SportsTeam.new("Lions", ["Person1", "Person2", "Person3"],"Stephen")		
-			new_coach = team.update_coach("Rick")
-			assert_equal("Rick", new_coach)
+			team.coach ="Rick"
+			assert_equal("Rick", team.coach)
 		end
 	end
