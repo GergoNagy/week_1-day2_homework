@@ -25,4 +25,8 @@ class CodeclanStudent
 		return "I can talk!"
 	end
 
+	def fav_lang(lang)
+		return "I love #{lang}"
+	end
+
 end

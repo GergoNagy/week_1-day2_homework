@@ -28,4 +28,9 @@ class TestCodeclanStudent < MiniTest::Test
 		assert_equal("I can talk!", talk)
 	end
 
+	def test_fav_lang
+		person = CodeclanStudent.new("Greg", 3)
+		fav = person.fav_lang("Ruby")
+		assert_equal("I love Ruby", fav)
+	end
 end
